@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "genius-lyrics": "^4.4.7",
+    "typescript": "^5.5.4"
+  }
+}
