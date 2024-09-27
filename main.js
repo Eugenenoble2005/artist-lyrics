@@ -8,7 +8,6 @@ const Client = new Genius.Client(process.env.GENIUS_API_KEY); // Scrapes if no k
             index++;
             if(arg.startsWith("--artist")){
                 var artist = process.argv[index+1];
-                console.log(artist);
                 const songs = await Client.songs.search(artist);
                 const indexSongs = Math.floor(Math.random() * Math.floor(songs.length));
                 const lyrics = await songs[indexSongs].lyrics();
